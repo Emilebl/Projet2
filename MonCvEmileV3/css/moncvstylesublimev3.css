@@ -1,23 +1,74 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot');
+    src: url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans_light_macroman/OpenSans-Light-webfont.eot');
+    src: url('fonts/opensans_light_macroman/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans_light_macroman/OpenSans-Light-webfont.woff2') format('woff2'),
+         url('fonts/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/opensans_light_macroman/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/opensans_light_macroman/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /* General */
+body
+{
+    font-family: 'open_sansregular';
+}
+
+
+.container-fluid
+{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    color: #424242;
+}
+
+
 
 h1
 {
     font-size: 4em;
     text-transform: uppercase;
-    font-weight: 200;
+    font-family: 'open_sanslight';
+    color: black;
 }
 
 h2
 {
     font-size: 1.8em;
+    font-weight: bold;
 }
 
 h3
 {
     font-size: 1,5em;
     text-transform: uppercase;
+    font-weight: 600;
 }
+
+h4, h5
+{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
 
 /* Zone Jaune */
 
@@ -27,6 +78,8 @@ h3
     padding-top: 15px;
     padding-left: 0;
     padding-right: 0;
+    display: flex;
+    flex-direction: column;
 }
 .yellow h3
 {
@@ -49,6 +102,7 @@ h3
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
 }
 
 #contact
@@ -67,6 +121,11 @@ h3
    margin-top: 15px;
    display: flex;
    justify-content: space-between;
+}
+
+.loisirs-conteneur
+{
+    margin-top: auto !important;
 }
 
 #loisirs i
@@ -98,7 +157,7 @@ img
 
 #emile
 {
-    font-weight: 400;
+    font-weight: bold;
     color: #FFC107;
 }
 
@@ -110,6 +169,7 @@ img
 .blanc
 {
     padding-left: 60px;
+    padding-right: 40px;
 }
 
 .blanc i
@@ -132,22 +192,30 @@ img
     font-size: 1.5em;
 }
 
-.col-xs-2 i
+
+.icon-date
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-weight: bold;
+}
+
+.icon-date i
 {
     font-size: 0.8em;
+    padding-right: 20px;
 }
 
 .poste
 {
     font-style: italic;
+    font-weight: bold;
 }
 
-#dev, #bts, #tech
+#dev, #bts, #tech, #reco
 {
     text-align: justify;
-    width: 80%;
+    width: 90%;
+    margin-bottom: 70px;
 }
-
-
-
-
