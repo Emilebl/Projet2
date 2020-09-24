@@ -96,13 +96,18 @@ h4, h5
     margin-bottom: 20px;
 }
 
-.yellow p
+.yellow p, .yellow h4
 {
     text-align: justify;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
+}
+
+.yellow h4 {
+    color: #808080;
+    padding-left: 20%;
 }
 
 #contact
@@ -117,9 +122,14 @@ h4, h5
     margin-bottom: 50px;
 }
 
+#competences-title {
+    margin-bottom: 25px;
+}
+
 .competences {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 30%;
 }
 
 #loisirs
